@@ -27,9 +27,6 @@ def contains_all(str, set):
 			return 0
 	return 1
 
-
-
-
 inputs = []
 outputs = []
 with open("input.txt") as file:
