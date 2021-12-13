@@ -1,10 +1,8 @@
 lines = open("input.txt").read().splitlines()
-
 openings = ['(', '[', '{', '<']
 closings = [')', ']', '}', '>']
 p1_values = [3, 57, 1197, 25137]
 p2_values = [1, 2, 3, 4]
-
 uncorrupted = []
 
 corrupted_total = 0
@@ -27,7 +25,6 @@ for i in range(len(lines)):
 			fixed_score *= 5 
 			fixed_score += p2_values[current_openings[len(current_openings) - k - 1]]
 		fixed_scores.append(fixed_score)
-
 
 print("part 1: ", corrupted_total)
 print("part 2: ", sorted(fixed_scores)[int(len(fixed_scores)/2)])
