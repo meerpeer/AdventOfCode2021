@@ -7,7 +7,7 @@ def count_groupsize(y, x):
 		# 9 is encountered or -1 (which is the spot we mark)
 		# if left or top are reached:	y or x are < 0
 		# if right is reached:			x > len(matrix[0])
-		# if bottem is reached:			y > len(matrix)
+		# if bottem is reached:			y > len(matrix) 
 	if y < 0 or x < 0 or x >= len(matrix[0]) or y >= len(matrix):
 		return
 	if matrix[y][x] == 9 or matrix[y][x] == -1:
